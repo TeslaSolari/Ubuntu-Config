@@ -18,3 +18,5 @@ sudo dpkg-reconfigure lightdm
 
 #resources
 https://realpython.com/blog/python/setting-up-sublime-text-3-for-full-stack-python-development/
+
+#setup dynamic display switching https://help.ubuntu.com/community/DynamicMultiMonitor
