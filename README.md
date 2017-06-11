@@ -18,5 +18,6 @@ sudo dpkg-reconfigure lightdm
 
 #resources
 https://realpython.com/blog/python/setting-up-sublime-text-3-for-full-stack-python-development/
+https://www.digitalocean.com/community/tutorials/installing-and-using-ranger-a-terminal-file-manager-on-a-ubuntu-vps
 
 #setup dynamic display switching https://help.ubuntu.com/community/DynamicMultiMonitor

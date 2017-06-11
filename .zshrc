@@ -89,8 +89,16 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 alias devbox='ssh shuttlea-dev.aka.corp.amazon.com'
 alias mntd='sudo sshfs -o allow_other shuttlea@shuttlea-dev.aka.corp.amazon.com:/home/shuttlea/ /mnt/devbox'
-alias rdw='rdesktop WIN-OBPQ769PR3S.ant.amazon.com -u shuttlea -g 1080x1880'
+alias rdw='rdesktop -r clipboard:PRIMARYCLIPBOARD WIN-OBPQ769PR3S.ant.amazon.com -g 1080x1880'
+alias rdb='rdesktop -r clipboard:PRIMARYCLIPBOARD MININT-FE3KM0P.ant.amazon.com -g 1080x1880 -u shuttlea -d ANT.AMAZON.COM -p -'
+alias rdba='rdesktop -r clipboard:PRIMARYCLIPBOARD MININT-FE3KM0P.ant.amazon.com -u shuttlea -d ANT.AMAZON.COM -p -'
+alias abs-slave-db='ssh -L3306:absolution-slave-db.rr.amazon.com:3306 security-bastions-prod-iad.amazon.com'
 alias switchdisplay='sudo dpkg-reconfigure lightdm'
+
+#Alias for bastion access
+alias mbc='mwinit && ssh security-bastions-prod-iad.amazon.com' 
+alias atlas='ssh shuttlea@52.210.158.114'
+
 #1920x1080
 #DevBox Alias's
 alias e=emacs
@@ -109,4 +117,5 @@ alias bbr='brc brazil-build'
 alias bball='brc --allPackages'
 alias bbb='brc --allPackages brazil-build'
 alias bbra='bbr apollo-pkg'
+
 
